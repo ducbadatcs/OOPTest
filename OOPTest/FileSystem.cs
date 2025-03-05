@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOPTest
 {
-    public class FileSsytem
+    public class FileSystem
     {
         private List<Thing> _contents;
 
-        public FileSsytem()
+        public FileSystem()
         {
 
             this._contents = new List<Thing>();

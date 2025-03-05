@@ -11,7 +11,7 @@ namespace OOPTest
         private string _extension;
         private int _size;
 
-        public File(string name, string extension, int size) : base(name)
+        public File(string name, string extension, int size = 0) : base(name)
         {
             this._extension = extension;
             this._size = size;
@@ -24,7 +24,7 @@ namespace OOPTest
 
         public override void Print()
         {
-            Console.WriteLine($"File '{this.Name}.{this._extension} Size: {this.Size} bytes");
+            Console.WriteLine($"File '{this.Name}.{this._extension} Size: {this.Size()} bytes");
         }
 
 
